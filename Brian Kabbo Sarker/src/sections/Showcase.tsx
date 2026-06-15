@@ -15,31 +15,40 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    name: "WHAT AM I CRAVING?",
-    description: "A smart food discovery platform that helps you find your next meal based on mood and cuisine preferences. Features a dynamic spinning wheel and filtering system.",
-    stack: ["React", "JavaScript", "Tailwind CSS"],
-    image: "/images/food-picker.png",
+    name: "Ilmiya",
+    description: "The platform includes Campus/Learn for interactive learning with quizzes, sections, smart cards, and an AI assistant; Canvas for Quran study with tajweed, recitation, tafsir, and AI feedback; Portal/People for managing profiles, analytics, and authentication; and a shared Login app for secure access.",
+    stack: ["React", "JavaScript", "Bootstrap"],
+    image: "/images/ilmiya_dashboard.png",
     github: "https://github.com/briankabbo/what-am-i-craving-for-frontend",
-    live: "https://cravingwhat.vercel.app",
+    live: "https://iqra.myilmiya.com",
   },
   {
     id: 2,
-    name: "PERSONAL PORTFOLIO V1",
-    description: "A dark-themed corner of the internet where I prove I know what I'm doing. Built with React, TypeScript, and Tailwind CSS. Got this after approximately 47 rounds of tweaking the color code.",
-    stack: ["React", "TypeScript", "Tailwind"],
-    image: "/images/Portfolio.png",
+    name: "Brands Meet Creators",
+    description: "A comprehensive TikTok marketing platform featuring dedicated portals for Content Creators, Brand Partners, Marketing Agencies, and Administrative Management. The platform streamlines collaboration and campaign management in the digital marketing ecosystem.",
+    stack: ["React", "JavaScript", "Bootstrap"],
+    image: "/images/bmc.png",
     github: "https://github.com/briankabbo/brian-kabbo-sarker-portfolio",
-    live: null,
+    live: "https://brandsmeetcreators.com/",
+  },
+   {
+    id: 3,
+    name: "Complya",
+    description: "An enterprise compliance management platform helping organizations track regulatory requirements, manage audits, and maintain compliance documentation.",
+    stack: ["React", "JavaScript", "Bootstrap"],
+    image: "/images/complaya.png",
+    github: "https://github.com/Marg0n/bible_verse_web_extension",
+    live: "https://complya.com/home/",
   },
   {
-    id: 3,
-    name: "BIBLE VERSE EXTENSION",
-    description: "A daily Bible verse web extension with full Bangla and English support. One of the few that actually serves the Bangla-speaking believers. Comes with save, share, and verse search features baked in.",
-    stack: ["React", "TypeScript", "Node.js"],
-    image: "/images/Bible_Mockup.png",
+    id: 4,
+    name: "Clips Saver",
+    description: "This is a Next.js 13+ frontend for ClipsSaver, a web app to download Instagram and other social media content including reels, stories, photos, videos, highlights, and profiles..",
+    stack: ["Next", "JavaScript", "Bootstrap"],
+    image: "/images/clips_Saver.png",
     github: "https://github.com/Marg0n/bible_verse_web_extension",
-    live: null,
-  },
+    live: "https://clipssaver.com/",
+  },  
 ];
 
 const Showcase: React.FC = () => {
@@ -81,9 +90,9 @@ const Showcase: React.FC = () => {
               <h2 className="text-xl md:text-2xl font-bold tracking-[0.3em] text-[#aaa] uppercase font-poppins">
                 PET PROJECTS
               </h2>
-              <span className="text-xs text-white/30 tracking-widest uppercase font-mono">
+              {/* <span className="text-xs text-white/30 tracking-widest uppercase font-mono">
                 / PORTFOLIO
-              </span>
+              </span> */}
             </div>
           </motion.div>
 
@@ -108,12 +117,12 @@ const Showcase: React.FC = () => {
                       exit={{ y: -24, transition: { duration: 0.15, ease: 'easeIn' } }}
                       className="whitespace-nowrap"
                     >
-                      0{activeProject + 1}
+                      {String(activeProject + 1).padStart(2, '0')}
                     </motion.div>
                   </AnimatePresence>
                 </div>
                 <span>/</span>
-                <span className="px-3">03</span>
+                <span className="px-3">{String(projects.length).padStart(2, '0')}</span>
                 <span>]</span>
               </div>
 
@@ -180,7 +189,7 @@ const Showcase: React.FC = () => {
 
         {/* RIGHT — Image Column */}
         <div className="w-[55%]">
-          {projects.slice(0, 3).map((item, index) => (
+          {projects.map((item, index) => (
             <motion.div
               key={item.id}
               className="flex items-center justify-end px-8"
@@ -202,7 +211,7 @@ const Showcase: React.FC = () => {
 
                   {/* Desktop Hover Overlay */}
                   <div className="absolute inset-0 z-30 flex items-center justify-center gap-3 bg-black/40 opacity-0 hover:opacity-100 transition-opacity duration-300 backdrop-blur-[2px]">
-                    {item.github !== null && (
+                    {/* {item.github !== null && (
                       <a
                         href={item.github}
                         target="_blank"
@@ -212,7 +221,7 @@ const Showcase: React.FC = () => {
                         <Github size={18} className="text-white" />
                         <span className="text-[10px] font-bold text-white tracking-[0.2em] uppercase">GitHub</span>
                       </a>
-                    )}
+                    )} */}
                     {item.live !== null && (
                       <a
                         href={item.live}

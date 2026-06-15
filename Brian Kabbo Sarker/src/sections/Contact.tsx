@@ -56,14 +56,14 @@ const Contact: React.FC = () => {
 
         <div className="flex flex-col sm:flex-row justify-center items-stretch sm:items-center gap-3 sm:gap-6 mt-8 sm:mt-12 max-w-md sm:max-w-none mx-auto">
           <a
-            href="mailto:braiankabbo@gmail.com"
+            href="mailto:zulkaif044@gmail.com"
             className="w-full sm:w-auto btn-shine flex items-center justify-center gap-3 min-h-11 px-8 sm:px-10 py-4 sm:py-5 rounded-2xl border border-moonstone-border bg-transparent hover:bg-white transition-all duration-300 text-moonstone font-bold text-base sm:text-lg"
           >
             <Mail className="w-5 h-5" />
             Email Me
           </a>
           <a
-            href="https://linkedin.com/in/brian-kabbo-sarker"
+            href="https://www.linkedin.com/in/muhammad-zulqaif-105253344/"
             target="_blank"
             rel="noopener noreferrer"
             className="w-full sm:w-auto btn-shine flex items-center justify-center gap-3 min-h-11 px-8 sm:px-10 py-4 sm:py-5 rounded-2xl border border-moonstone-border bg-transparent hover:bg-white transition-all duration-300 text-moonstone font-bold text-base sm:text-lg"

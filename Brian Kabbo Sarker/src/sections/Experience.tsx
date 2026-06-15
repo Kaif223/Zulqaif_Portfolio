@@ -7,41 +7,42 @@ const Experience: React.FC = () => {
   const experienceData = [
     {
       id: 'company1',
-      company: 'The Christian Co-Operative Credit Union Ltd.',
-      role: 'Trainee Software Developer (Full Time)',
-      period: 'Nov 2024 – Present',
+      company: 'Genius Mind Zone',
+      role: 'Frontend Software Developer (Full Time)',
+      period: 'Jan 2025 – Present',
       isCurrent: true,
       points: [
-        'Exposure to FinTech operations including ERP systems and financial application workflows',
-        'Monitored and resolved system incidents in a 24/7 NOC environment to maintain continuous operation for 48,600+ active credit union members.',
-        'Maintained ERP reliability for approximately 619 staff by performing routine performance troubleshooting, system health checks, and network monitoring on financial application workflows.',
-        'Actively building side projects in .NET, C#, React and TypeScript outside of formal responsibilities.',
-      ],
+        'Built responsive web applications using React, Next.js, TypeScript, JavaScript, Tailwind CSS, and Bootstrap.',
+        'Worked with Supabase, Firebase, PostgreSQL, and MySQL to manage authentication, databases, and backend services.',
+        'Used Git and GitHub for version control and collaborative development workflows.',
+        'Developed reusable components, integrated APIs, and implemented state management using Redux Toolkit.',
+        'Created technical documentation with Mintlify, Astro and followed modern frontend development best practices.',
+      ]
     },
     {
       id: 'company2',
-      company: 'Wellessia',
-      role: 'Video Editor (Full Time)',
-      period: 'Aug 2024 – Nov 2024',
+      company: 'GMZ IT Company',
+      role: 'Learning / Course',
+      period: 'Sept 2024 – Dec 2024',
       isCurrent: false,
       points: [
-        'Edited 200+ short-form, promotional, and tutorial videos.',
-        'Collaborated with the creative team to enhance visual storytelling.',
-        'Experienced in color grading, sound design, and motion graphics.',
-      ],
+        'Learned HTML, CSS, SCSS/SASS, Tailwind, Bootstrap, and responsive web design.',
+        'Gained hands-on experience with React.js, Next.js, React Redux, and Redux Toolkit.',
+        'Developed frontend projects while improving API integration and technical documentation skills using Mintlify and Astro.',
+      ]
     },
-    {
-      id: 'company3',
-      company: 'Babuland LTD',
-      role: 'Compliance Associate (Part-Time)',
-      period: 'May 2022 – Oct 2023',
-      isCurrent: false,
-      points: [
-        'Oversaw compliance and quality assurance across 8 branches with 30+ staff each.',
-        'Acted as a central communication link between branch managers to resolve operational challenges.',
-        'Monitored team performance and customer experience metrics.',
-      ],
-    },
+    // {
+    //   id: 'company3',
+    //   company: 'Babuland LTD',
+    //   role: 'Compliance Associate (Part-Time)',
+    //   period: 'May 2022 – Oct 2023',
+    //   isCurrent: false,
+    //   points: [
+    //     'Oversaw compliance and quality assurance across 8 branches with 30+ staff each.',
+    //     'Acted as a central communication link between branch managers to resolve operational challenges.',
+    //     'Monitored team performance and customer experience metrics.',
+    //   ],
+    // },
   ];
 
   const activeExperience = experienceData.find((exp) => exp.id === activeTab)!;
@@ -146,8 +147,8 @@ const Experience: React.FC = () => {
               key={exp.id}
               onClick={() => setActiveTab(exp.id)}
               className={`btn-shine text-left px-6 py-4 rounded-xl border transition-all duration-300 ${activeTab === exp.id
-                  ? 'bg-moonstone text-zinc-950 font-bold border-moonstone'
-                  : 'bg-transparent border-moonstone-border/20 text-white hover:bg-white'
+                ? 'bg-moonstone text-zinc-950 font-bold border-moonstone'
+                : 'bg-transparent border-moonstone-border/20 text-white hover:bg-white'
                 }`}
             >
               {exp.company}

@@ -14,10 +14,11 @@ const About: React.FC = () => {
   };
 
   const techStack = [
-    { category: 'Languages & Frameworks', items: ['C#', 'TypeScript', 'React', 'Python', 'Tailwind', 'ASP.NET Core', 'Entity Framework Core'] },
-    { category: 'Backend & DB', items: ['REST API', 'JWT Auth', 'PostgreSQL', 'MySQL', 'Redis'] },
+    // { category: 'Languages & Frameworks', items: ['C#', 'TypeScript', 'React', 'Python', 'Tailwind', 'ASP.NET Core', 'Entity Framework Core'] },
+    { category: 'Languages & Frameworks', items: ['React', 'Next', 'TypeScript', 'javascript', 'Tailwind', 'Bootstrap'] },
+    { category: 'Backend & DB', items: ['Supabase', 'FireBase', 'PostgreSQL', 'MySQL'] },
     { category: 'AI Integration', items: ['OpenAI API', 'RAG', 'Embeddings', 'Vector Database'] },
-    { category: 'Infra & Cloud', items: ['Git', 'GitHub', 'Docker', 'Azure', 'GitHub Actions'] },
+    { category: 'Infra', items: ['Git', 'GitHub',  'GitHub Actions'] },
   ];
 
   return (
@@ -46,8 +47,8 @@ const About: React.FC = () => {
             <div className="absolute -inset-4 border border-moonstone/20 rounded-2xl group-hover:border-moonstone group-hover:shadow-[0_10px_25px_-5px_rgba(224,231,255,0.25),0_8px_10px_-6px_rgba(0,0,0,0.1)] transition-all duration-500" />
             <img 
               src={profilePhoto} 
-              alt="Brian Kabbo Sarker" 
-              className="w-56 h-56 sm:w-64 sm:h-64 md:w-80 md:h-80 rounded-xl object-cover grayscale hover:grayscale-0 transition-all duration-700 shadow-2xl relative z-10"
+              alt="ZulQaif" 
+              className="w-56 h-56 sm:w-64 sm:h-64 md:w-80 md:h-80 rounded-xl object-contain  hover:grayscale-0 transition-all duration-700 shadow-2xl relative z-10"
             />
           </div>
         </motion.div>
@@ -61,11 +62,11 @@ const About: React.FC = () => {
           className="w-full md:w-3/5 space-y-5 sm:space-y-6 lg:space-y-8 min-w-0"
         >
           <p className="text-base sm:text-lg lg:text-xl text-white leading-relaxed break-words">
-            I'm <span className="text-moonstone font-semibold">Brian Kabbo Sarker</span>, a full-stack software developer focused
+            I'm <span className="text-moonstone font-semibold">ZulQaif</span>, a frontend software engineer focused
             on building interactive and reliable web applications.
           </p>
           <p className="text-base sm:text-lg lg:text-xl text-white leading-relaxed break-words">
-            I hold a Bachelor degree in Computer Science & Engineering from <span className="text-moonstone font-semibold">Green University of Bangladesh</span>.
+            I hold a Bachelor degree in Computer Science & Engineering from <span className="text-moonstone font-semibold">Govt College University of Faisalabad</span>.
           </p>
           <p className="text-base sm:text-lg lg:text-xl leading-relaxed text-white/90 break-words">
             My strongest skill is learning fast and adapting quickly. I work well in team environments, value clear

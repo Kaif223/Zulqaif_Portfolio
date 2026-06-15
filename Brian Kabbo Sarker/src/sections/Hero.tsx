@@ -45,24 +45,24 @@ const Hero: React.FC = () => {
           variants={itemVariants}
           className="text-4xl sm:text-5xl md:text-8xl lg:text-9xl mb-4 sm:mb-6 lg:mb-6 font-bold tracking-tight text-white leading-tight lg:leading-none break-words lg:break-normal"
         >
-          Brian Kabbo
+          ZulQaif
         </motion.h1>
 
         <motion.p
           variants={itemVariants}
           className="text-white text-base sm:text-xl md:text-2xl font-inter mb-8 sm:mb-12 lg:mb-12 max-w-2xl mx-auto leading-relaxed flex flex-col lg:block items-center lg:items-stretch gap-3 lg:gap-0 px-1 lg:px-0"
         >
-          <span className="opacity-80">Full-Stack Software Engineer Crafting with</span>{' '}
+          <span className="opacity-80">Frontend Software Engineer Crafting with</span>{' '}
           <span
             className="text-moonstone font-mono font-semibold bg-moonstone-dim px-3 py-1 rounded border border-moonstone-border/20 max-lg:mt-1 lg:ml-[0.5em]"
             style={{ display: 'inline-flex', alignItems: 'center', verticalAlign: 'middle' }}
           >
             <span style={{ display: 'block', overflow: 'hidden', height: '1.2em' }}>
               <span style={{ display: 'flex', flexDirection: 'column', animation: 'tickUp 7s ease-in-out infinite' }}>
-                <span style={{ display: 'block', height: '1.2em', lineHeight: '1.2em', whiteSpace: 'nowrap' }}>.NET</span>
                 <span style={{ display: 'block', height: '1.2em', lineHeight: '1.2em', whiteSpace: 'nowrap' }}>React</span>
+                <span style={{ display: 'block', height: '1.2em', lineHeight: '1.2em', whiteSpace: 'nowrap' }}>Next</span>
                 <span style={{ display: 'block', height: '1.2em', lineHeight: '1.2em', whiteSpace: 'nowrap' }}>TypeScript</span>
-                <span style={{ display: 'block', height: '1.2em', lineHeight: '1.2em', whiteSpace: 'nowrap' }}>.NET</span>
+                {/* <span style={{ display: 'block', height: '1.2em', lineHeight: '1.2em', whiteSpace: 'nowrap' }}>.NET</span> */}
               </span>
             </span>
           </span>
@@ -79,7 +79,7 @@ const Hero: React.FC = () => {
             View Work
           </a>
           <a
-            href="https://drive.google.com/file/d/1ERIkqExyzmGRm_Hhst7v-mMBce7TGdWh/view?usp=sharing"
+            href="https://drive.google.com/file/d/1AaYDDDOvlDKT9n3KRTQnnyZaMKAZpTIa/view?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
             className="group btn-shine inline-flex items-center justify-center min-h-11 lg:min-h-0 px-6 sm:px-8 lg:px-8 py-3 sm:py-4 lg:py-4 rounded-full border border-moonstone-border text-moonstone font-bold text-base sm:text-lg lg:text-lg bg-transparent hover:bg-white transition-all duration-300"
