@@ -1,7 +1,7 @@
 # Personal Portfolio Website | [🔗Live Demo](https://zulqaif-henna.vercel.app/)
 ### A personal space to showcase my projects, experiments, and ongoing growth as a software developer.
 
-![Cover](https://github.com/briankabbo/brian-kabbo-sarker-portfolio/blob/Portfolio/Brian%20Kabbo%20Sarker/public/images/Portfolio.png)
+![Cover](https://github.com/Kaif223/Zulqaif_Portfolio/blob/Portfolio/Brian%20Kabbo%20Sarker/public/images/Portfolio.png)
 > **This is a preview image. Visit the live demo [link](https://briankabbo.vercel.app) for more.**
 
 ---
