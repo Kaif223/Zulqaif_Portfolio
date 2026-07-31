@@ -79,7 +79,7 @@ const Hero: React.FC = () => {
             View Work
           </a>
           <a
-            href="https://drive.google.com/file/d/1AaYDDDOvlDKT9n3KRTQnnyZaMKAZpTIa/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1cMMnYeAL2M6nGfXUjUnWgAUDww-FUyOH/view?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
             className="group btn-shine inline-flex items-center justify-center min-h-11 lg:min-h-0 px-6 sm:px-8 lg:px-8 py-3 sm:py-4 lg:py-4 rounded-full border border-moonstone-border text-moonstone font-bold text-base sm:text-lg lg:text-lg bg-transparent hover:bg-white transition-all duration-300"
